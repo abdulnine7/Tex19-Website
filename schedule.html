@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <title>Texephyr'19</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="img/tx.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/venobox/venobox.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+  <!--
+  *********************************counter styling********************** -->
+  <style>
+    body {
+    background: #ffd99b;
+  }
+
+  #snowCanvas {
+    background: transparent;
+    bottom: 0;
+    left: 0;
+    pointer-events: none;
+    position: fixed;
+    right: 0;
+    top: 0;
+  }
+
+  #speedOutput {
+    color: #fff;
+    font-size: 1.4em;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    line-height: 1em;
+  }
+  .cs_img{
+    height: auto;
+    width: 600px;
+    padding-bottom: 40px;
+  }
+  </style>
+</head>
+
+<body>
+
+
+  <!--==========================
+      Header
+    ============================-->
+  <header id="header" class="header-fixed">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <!-- Uncomment below if you prefer to use a text logo -->
+        <!-- <h1><a href="#main">C<span>o</span>nf</a></h1>-->
+        <a href="index.html#intro" class="scrollto"><img src="img/tx.png" alt="" title=""></a>
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li class="menu-active"><a href="schedule.html">Schedule</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="sponsors.html">Sponsors</a></li>
+          <li><a href="contactus.html">Contact</a></li>
+          <li class="buy-tickets"><a href="register.html">Registrations</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+
+  <main id="main" class="main-page">
+    <section id="schedule" class="section-with-bg">
+      <section id="schedules">
+        <div class="container wow fadeInUp">
+          <div class="section-header">
+            <h2>Event Schedule</h2>
+          </div>
+
+          <div class="coming soon" align="center">
+            <img src="img/comingsoon.png" class="cs_img" alt="coming soon" title=""></ <div>
+
+            <!---                     ******************************** for later use,plz dont delete************************
+                         <div class="hihihi">
+          <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" href="#day-1" role="tab" data-toggle="tab">1st March '19</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#day-2" role="tab" data-toggle="tab">2nd March '19</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#day-3" role="tab" data-toggle="tab">3rd March '19</a>
+            </li>
+          </ul>
+
+          <h3 class="sub-heading">Voluptatem nulla veniam soluta et corrupti consequatur neque eveniet officia. Eius
+            necessitatibus voluptatem quis labore perspiciatis quia.</h3>
+
+          <div class="tab-content row justify-content-center">
+
+
+            <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-1">
+
+              <div class="row schedule-item">
+                <div class="col-md-2"><time>09:30 AM</time></div>
+                <div class="col-md-10">
+                  <h4>Registration</h4>
+                  <p>Fugit voluptas iusto maiores temporibus autem numquam magnam.</p>
+                </div>
+              </div>
+
+              <div class="row schedule-item">
+                <div class="col-md-2"><time>10:00 AM</time></div>
+                <div class="col-md-10">
+                  <h4>Keynote <span>Brenden Legros</span></h4>
+                  <p>Facere provident incidunt quos voluptas.</p>
+                </div>
+              </div>
+
+              <div class="row schedule-item">
+                <div class="col-md-2"><time>11:00 AM</time></div>
+                <div class="col-md-10">
+                  <h4>Et voluptatem iusto dicta nobis. <span>Hubert Hirthe</span></h4>
+                  <p>Maiores dignissimos neque qui cum accusantium ut sit sint inventore.</p>
+                </div>
+              </div>
+
+              <div class="row schedule-item">
+                <div class="col-md-2"><time>12:00 AM</time></div>
+                <div class="col-md-10">
+                  <h4>Explicabo et rerum quis et ut ea. <span>Cole Emmerich</span></h4>
+                  <p>Veniam accusantium laborum nihil eos eaque accusantium aspernatur.</p>
+                </div>
+              </div>
+
+              <div class="row schedule-item">
+                <div class="col-md-2"><time>02:00 PM</time></div>
+                <div class="col-md-10">
+
+                  <h4>Qui non qui vel amet culpa sequi. <span>Jack Christiansen</span></h4>
+                  <p>Nam ex distinctio voluptatem doloremque suscipit iusto.</p>
+                </div>
+              </div>
+
+              <div class="row schedule-item">
+                <div class="col-md-2"><time>03:00 PM</time></div>
+                <div class="col-md-10">
+
+                  <h4>Quos ratione neque expedita asperiores. <span>Alejandrin Littel</span></h4>
+                  <p>Eligendi quo eveniet est nobis et ad temporibus odio quo.</p>
+                </div>
+              </div>
+
+              <div class="row schedule-item">
+                <div class="col-md-2"><time>04:00 PM</time></div>
+                <div class="col-md-10">
+
+                  <h4>Quo qui praesentium nesciunt <span>Willow Trantow</span></h4>
+                  <p>Voluptatem et alias dolorum est aut sit enim neque veritatis.</p>
+                </div>
+              </div>
+
+            </div>
+            <div role="tabpanel" class="col-lg-9  tab-pane fade" id="day-2">
+
+              <div class="row schedule-item">
+                <div class="col-md-2"><time>10:00 AM</time></div>
+                <div class="col-md-10">
+
+                  <h4>Libero corrupti explicabo itaque. <span>Brenden Legros</span></h4>
+                  <p>Facere provident incidunt quos voluptas.</p>
+                </div>
+              </div>
+
+              <div class="row schedule-item">
+                <div class="col-md-2"><time>11:00 AM</time></div>
+                <div class="col-md-10">
+
+                  <h4>Et voluptatem iusto dicta nobis. <span>Hubert Hirthe</span></h4>
+                  <p>Maiores dignissimos neque qui cum accusantium ut sit sint inventore.</p>
+                </div>
+              </div>
+
+              <div class="row schedule-item">
+                <div class="col-md-2"><time>12:00 AM</time></div>
+                <div class="col-md-10">
+
+                  <h4>Explicabo et rerum quis et ut ea. <span>Cole Emmerich</span></h4>
+                  <p>Veniam accusantium laborum nihil eos eaque accusantium aspernatur.</p>
+                </div>
+              </div>
+
+              <div class="row schedule-item">
+                <div class="col-md-2"><time>02:00 PM</time></div>
+                <div class="col-md-10">
+
+                  <h4>Qui non qui vel amet culpa sequi. <span>Jack Christiansen</span></h4>
+                  <p>Nam ex distinctio voluptatem doloremque suscipit iusto.</p>
+                </div>
+              </div>
+
+              <div class="row schedule-item">
+                <div class="col-md-2"><time>03:00 PM</time></div>
+                <div class="col-md-10">
+
+                  <h4>Quos ratione neque expedita asperiores. <span>Alejandrin Littel</span></h4>
+                  <p>Eligendi quo eveniet est nobis et ad temporibus odio quo.</p>
+                </div>
+              </div>
+
+              <div class="row schedule-item">
+                <div class="col-md-2"><time>04:00 PM</time></div>
+                <div class="col-md-10">
+
+                  <h4>Quo qui praesentium nesciunt <span>Willow Trantow</span></h4>
+                  <p>Voluptatem et alias dolorum est aut sit enim neque veritatis.</p>
+                </div>
+              </div>
+
+            </div>
+
+            <div role="tabpanel" class="col-lg-9  tab-pane fade" id="day-3">
+              <div class="row schedule-item">
+                <div class="col-md-2"><time>10:00 AM</time></div>
+                <div class="col-md-10">
+                  <h4>Et voluptatem iusto dicta nobis. <span>Hubert Hirthe</span></h4>
+                  <p>Maiores dignissimos neque qui cum accusantium ut sit sint inventore.</p>
+                </div>
+              </div>
+
+              <div class="row schedule-item">
+                <div class="col-md-2"><time>11:00 AM</time></div>
+                <div class="col-md-10">
+                  <h4>Explicabo et rerum quis et ut ea. <span>Cole Emmerich</span></h4>
+                  <p>Veniam accusantium laborum nihil eos eaque accusantium aspernatur.</p>
+                </div>
+              </div>
+
+              <div class="row schedule-item">
+                <div class="col-md-2"><time>12:00 AM</time></div>
+                <div class="col-md-10">
+                  <h4>Libero corrupti explicabo itaque. <span>Brenden Legros</span></h4>
+                  <p>Facere provident incidunt quos voluptas.</p>
+                </div>
+              </div>
+
+              <div class="row schedule-item">
+                <div class="col-md-2"><time>02:00 PM</time></div>
+                <div class="col-md-10">
+                  <h4>Qui non qui vel amet culpa sequi. <span>Jack Christiansen</span></h4>
+                  <p>Nam ex distinctio voluptatem doloremque suscipit iusto.</p>
+                </div>
+              </div>
+
+              <div class="row schedule-item">
+                <div class="col-md-2"><time>03:00 PM</time></div>
+                <div class="col-md-10">
+                  <h4>Quos ratione neque expedita asperiores. <span>Alejandrin Littel</span></h4>
+                  <p>Eligendi quo eveniet est nobis et ad temporibus odio quo.</p>
+                </div>
+              </div>
+
+              <div class="row schedule-item">
+                <div class="col-md-2"><time>04:00 PM</time></div>
+                <div class="col-md-10">
+                  <h4>Quo qui praesentium nesciunt <span>Willow Trantow</span></h4>
+                  <p>Voluptatem et alias dolorum est aut sit enim neque veritatis.</p>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+        --->
+
+      </section>
+    </section>
+
+  </main>
+
+
+  <!--==========================
+      Footer
+    ============================-->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6 footer-info">
+            <div class="ayra">
+              <img src="img/tx.png" alt="" title="">Texephyr'19</div>
+            <p>Texephyr is MIT-WPU's National Level Technical Fest.This event has been inspiring the minds of young students, igniting them to conquer the challenges faced today and propose innovating solutions that will flow a fresh wind of change
+              for development of society as well as themselves.</p>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="fa fa-angle-right"></i> <a href="index.html">Home</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="about.html">About Us</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="events.html">Events</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="sponsors.html">Sponsors</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="register.html">Registration</a></li>
+
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-contact">
+            <h4>Contact Us</h4>
+            <p>
+              Dr. Vishwanath Karad <br>
+              MIT-World Peace University<br>
+              Paud Road, Kothrud,
+              Pune <br>
+              Maharashtra<br>
+              <br>
+              <strong>Email:</strong> info@texephyr.in<br>
+            </p>
+
+            <div class="social-links">
+              <a href="https://twitter.com/mit_texephyr" class="twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+              <a href="https://m.facebook.com/profile.php?id=1390080244578546&ref=content_filter" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a> <a href="https://www.instagram.com/mit_texephyr/" class="instagram" target="_blank"><i
+                  class="fa fa-instagram"></i></a>
+              <a href="https://www.youtube.com/channel/UCrw25HiTlNJBEo9fjZDVY7g" class="google-plus" target="_blank"><i class="fa fa-youtube-play"></i></a>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>Texephyr</strong>. All Rights Reserved
+        <p>Designed & developed By:
+          <a href="">Abdul Sheikh, </a> <a href="https://www.facebook.com/shrutika.singh.7543?ref=bookmarks">Shrutika Singh, </a> & <a href=""> Indira Pimpalkhare </a>
+      </div>
+    </div>
+  </footer><!-- #footer -->
+
+  <a href="index.html#intro" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript"></script>
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/venobox/venobox.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
+
+
+  <!-- <canvas id="snowCanvas"></canvas> -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript"></script>
+  <script src="https://code.createjs.com/1.0.0/easeljs.min.js"></script>
+
+  <script>
+    var amount = 200;
+    var speed = 1;
+
+    var canvas = document.createElement("canvas");
+    canvas.setAttribute("id", "snowCanvas");
+    document.body.appendChild(canvas);
+
+    var canvas = document.getElementById("snowCanvas");
+    var stage = new createjs.Stage("snowCanvas");
+
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    window.addEventListener("resize", function() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+      stage.update();
+    });
+
+    createjs.Ticker.setFPS(60);
+    createjs.Ticker.addEventListener("tick", stage);
+
+    function Particle(x, y, dx, dy, rad) {
+      this.x = x;
+      this.y = y;
+      this.dx = dx;
+      this.dy = dy;
+      this.rad = rad;
+
+      var circle = new createjs.Shape();
+      stage.addChild(circle);
+      circle.graphics
+        .beginFill("black")
+        .drawCircle(0, 0, this.rad);
+      circle.x = this.x;
+      circle.y = this.y;
+
+      createjs.Ticker.addEventListener("tick", function() {
+        if (circle.y - rad > innerHeight || circle.x + rad > innerWidth || circle.x - rad < 0) {
+          circle.y = 0 - rad
+          circle.x = x
+        }
+
+        circle.x += dx;
+        circle.y += dy;
+      })
+    }
+
+    var circleArray = [];
+
+    for (var i = 0; i < amount; i++) {
+      var rad = Math.random() * 2;
+      var x = Math.random() * (innerWidth - rad * 2) + rad;
+      var y = Math.random() * (innerHeight - rad * 2) + rad;
+      var dx = (Math.random() - 0.5);
+      var dy = (Math.random() + 0.5) * speed;
+
+      circleArray.push(new Particle(x, y, dx, dy, rad));
+    }
+  </script>
+
+
+
+
+</body>
+
+</html>

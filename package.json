@@ -1,0 +1,29 @@
+{
+  "name": "texephyr-19",
+  "version": "1.0.0",
+  "description": "npm added to install jquery",
+  "main": "footfall.js",
+  "directories": {
+    "doc": "docs",
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/indirapimpalkhare/texephyr-19.git"
+  },
+  "keywords": [
+    "s"
+  ],
+  "author": "shrutika",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/indirapimpalkhare/texephyr-19/issues"
+  },
+  "homepage": "https://github.com/indirapimpalkhare/texephyr-19#readme",
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
+}
