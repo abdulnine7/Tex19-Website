@@ -1212,7 +1212,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 /*--------------------------------------------------------------
 # Subscribe Section
 --------------------------------------------------------------*/
-#subscribe {
+/* #subscribe {
   padding: 60px;
   background: url(../img/subscribe-bg.jpg) center center no-repeat;
   background-size: cover;
@@ -1260,7 +1260,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #subscribe button:hover {
   background: #e0072f;
-}
+} */
 
 /*--------------------------------------------------------------
 # Buy Tickets Section
