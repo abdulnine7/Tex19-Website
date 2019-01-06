@@ -1,18 +1,4 @@
-<style>
-  .google-maps {
-        position: relative;
-        padding-bottom: 75%; // This is the aspect ratio
-        height: 0;
-        overflow: hidden;
-    }
-    .google-maps iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100% !important;
-        height: 100% !important;
-    }
-</style>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -41,7 +27,21 @@
 
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
-
+  <style>
+    .google-maps {
+          position: relative;
+          padding-bottom: 75%; // This is the aspect ratio
+          height: 0;
+          overflow: hidden;
+      }
+      .google-maps iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100% !important;
+          height: 100% !important;
+      }
+  </style>
 </head>
 
 <body>
@@ -68,7 +68,7 @@
           <li><a href="team.html">Team</a></li>
           <li><a href="sponsors.html">Sponsors</a></li>
           <li class="menu-active"><a href="contactus.html">Contact</a></li>
-          <li class="buy-tickets"><a href="register.html">Registrations</a></li>
+          <li class="buy-tickets"><a href="register.php">Registrations</a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>
@@ -86,23 +86,23 @@
             <div class="form">
               <div id="sendmessage">Your message has been sent. Thank you!</div>
               <div id="errormessage"></div>
-              <form action="" method="post" role="form" class="contactForm">
+              <form action="contactus_status.php" method="post" class="">
 
                 <div class="form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required/>
                   <div class="validation"></div>
                 </div>
 
                 <div class="form-group">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" required />
                   <div class="validation"></div>
                 </div>
                 <div class="form-group">
-                  <input type="text" class="form-control" name="mobile" id="mobile" placeholder="Phone Number" data-rule="mobile" data-msg="Please enter a valid mobile" />
+                  <input type="text" class="form-control" name="mobile" id="mobile" placeholder="Phone Number" data-rule="mobile" data-msg="Please enter a valid mobile" required />
                   <div class="validation"></div>
                 </div>
                 <div class="form-group">
-                  <textarea placeholder="Message" class="form-control">
+                  <textarea placeholder="Message" name="message" class="form-control" required>
               </textarea>
                 </div>
                 <div class="text-center"><button type="submit">Submit</button></div>
@@ -140,7 +140,7 @@
               <li><i class="fa fa-angle-right"></i> <a href="about.html">About Us</a></li>
               <li><i class="fa fa-angle-right"></i> <a href="events.html">Events</a></li>
               <li><i class="fa fa-angle-right"></i> <a href="sponsors.html">Sponsors</a></li>
-              <li><i class="fa fa-angle-right"></i> <a href="register.html">Registration</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="register.php">Registration</a></li>
 
             </ul>
           </div>

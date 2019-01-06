@@ -32,81 +32,96 @@
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
 
-  <style >
+  <style>
     @import url(https://fonts.googleapis.com/css?family=Quicksand:400,300);
-    body{
-        font-family: 'Quicksand', sans-serif;
+
+    body {
+      font-family: 'Quicksand', sans-serif;
     }
-    .team{
-        padding:75px 0;
+
+    .team {
+      padding: 75px 0;
     }
-    h6.description{
-    	font-weight: bold;
-    	letter-spacing: 2px;
-    	color: #999;
-    	border-bottom: 1px solid rgba(0, 0, 0,0.1);
-    	padding-bottom: 5px;
+
+    h6.description {
+      font-weight: bold;
+      letter-spacing: 2px;
+      color: #999;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      padding-bottom: 5px;
     }
-    .profile{
-    	margin-top: 25px;
+
+    .profile {
+      margin-top: 25px;
     }
-    .profile h1{
-    	font-weight: normal;
-    	font-size: 20px;
-    	margin:10px 0 0 0;
+
+    .profile h1 {
+      font-weight: normal;
+      font-size: 20px;
+      margin: 10px 0 0 0;
     }
-    .profile h2{
-    	font-size: 14px;
-    	font-weight: lighter;
-    	margin-top: 5px;
+
+    .profile h2 {
+      font-size: 14px;
+      font-weight: lighter;
+      margin-top: 5px;
       margin-bottom: 12px;
     }
-    .profile .img-box{
-    	opacity: 1;
-    	display: block;
-    	position: relative;
+
+    .profile .img-box {
+      opacity: 1;
+      display: block;
+      position: relative;
     }
-    .profile .img-box:after{
-    	content:"";
-    	opacity: 0;
-    	background-color: rgba(0, 0, 0, 0.75);
-    	position: absolute;
-    	right: 0;
-    	left: 0;
-    	top: 0;
-    	bottom: 0;
+
+    .profile .img-box:after {
+      content: "";
+      opacity: 0;
+      background-color: rgba(0, 0, 0, 0.75);
+      position: absolute;
+      right: 0;
+      left: 0;
+      top: 0;
+      bottom: 0;
     }
-    .img-box ul{
-    	position: absolute;
-    	z-index: 2;
-    	bottom: 80px;
-    	text-align: center;
-    	width: 100%;
-    	padding-left: 0px;
-    	height: 0px;
-    	margin:0px;
-    	opacity: 0;
+
+    .img-box ul {
+      position: absolute;
+      z-index: 2;
+      bottom: 80px;
+      text-align: center;
+      width: 100%;
+      padding-left: 0px;
+      height: 0px;
+      margin: 0px;
+      opacity: 0;
     }
-    .profile .img-box:after, .img-box ul, .img-box ul li{
-    	-webkit-transition: all 0.5s ease-in-out 0s;
-        -moz-transition: all 0.5s ease-in-out 0s;
-        transition: all 0.5s ease-in-out 0s;
+
+    .profile .img-box:after,
+    .img-box ul,
+    .img-box ul li {
+      -webkit-transition: all 0.5s ease-in-out 0s;
+      -moz-transition: all 0.5s ease-in-out 0s;
+      transition: all 0.5s ease-in-out 0s;
     }
-    .img-box ul i{
-    	font-size: 20px;
-    	letter-spacing: 0px;
+
+    .img-box ul i {
+      font-size: 20px;
+      letter-spacing: 0px;
     }
-    .img-box ul li{
-    	width: 30px;
+
+    .img-box ul li {
+      width: 30px;
       height: 30px;
       text-align: center;
       border: 1px solid #88C425;
       margin: 2px;
       padding: 5px;
-    	display: inline-block;
+      display: inline-block;
     }
-    .img-box ul .my-team{
-    	width: 100px;
+
+    .img-box ul .my-team {
+      width: 100px;
       height: 30px;
       font-family: "Times New Roman", Times, serif;
       font-variant: small-caps;
@@ -116,25 +131,30 @@
       border: 1px solid #88C425;
       margin: 5px;
       padding: 3px;
-    	display: inline-block;
+      display: inline-block;
     }
-    .img-box a{
-    	color:#fff;
+
+    .img-box a {
+      color: #fff;
     }
-    .img-box:hover:after{
-    	opacity: 1;
+
+    .img-box:hover:after {
+      opacity: 1;
     }
-    .img-box:hover ul{
-    	opacity: 1;
+
+    .img-box:hover ul {
+      opacity: 1;
     }
-    .img-box ul a{
-    	-webkit-transition: all 0.3s ease-in-out 0s;
-    	-moz-transition: all 0.3s ease-in-out 0s;
-    	transition: all 0.3s ease-in-out 0s;
+
+    .img-box ul a {
+      -webkit-transition: all 0.3s ease-in-out 0s;
+      -moz-transition: all 0.3s ease-in-out 0s;
+      transition: all 0.3s ease-in-out 0s;
     }
-    .img-box a:hover li{
-    	border-color: #fff;
-    	color: #88C425;
+
+    .img-box a:hover li {
+      border-color: #fff;
+      color: #88C425;
     }
   </style>
 </head>
@@ -162,7 +182,7 @@
           <li class="menu-active"><a href="team.html">Team</a></li>
           <li><a href="sponsors.html">Sponsors</a></li>
           <li><a href="contactus.html">Contact</a></li>
-          <li class="buy-tickets"><a href="register.html">Registrations</a></li>
+          <li class="buy-tickets"><a href="register.php">Registrations</a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>
@@ -171,318 +191,415 @@
 
   <main id="main" class="main-page">
     <section id="speakers" class="wow fadeInUp">
-      <!-- <section id="team">
-        <div class="container">
-          <div class="section-header">
-            <h2>Team</h2>
-            <p>Here are our team members</p>
-          </div>
-          <div class="row px-5">
-            <div class="col-lg-2 col-md-2">
-              <div class="speaker">
-                <img src="img/speakers/1.jpg" alt="Speaker 1" class="img-fluid">
-                <div class="details">
-                  <h3><a href="#">Abdul Sheikh</a></h3>
-                  <p>Technical Head</p>
-                  <br>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-2 col-md-2">
-              <div class="speaker">
-                <img src="img/speakers/2.jpg" alt="Speaker 2" class="img-fluid">
-                <div class="details">
-                  <h3><a href="#">Pritam Kumar</a></h3>
-                  <p>Event Head</p>
-                  <br>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-2 col-md-2">
-              <div class="speaker">
-                <img src="img/speakers/3.jpg" alt="Speaker 3" class="img-fluid">
-                <div class="details">
-                  <h3><a href="#">Pulkit Gupta</a></h3>
-                  <p>PR & Publicity Head</p>
-                  <br>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-2 col-md-2">
-              <div class="speaker">
-                <img src="img/speakers/4.jpg" alt="Speaker 4" class="img-fluid">
-                <div class="details">
-                  <h3><a href="#">Vipul Dhande</a></h3>
-                  <p>Finance Head</p>
-                  <br>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-2 col-md-2">
-              <div class="speaker">
-                <img src="img/speakers/5.jpg" alt="Speaker 5" class="img-fluid">
-                <div class="details">
-                  <h3><a href="#">Shubham Salampuria</a></h3>
-                  <p>Secretarial Lead</p>
-                  <br>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-2 col-md-2">
-              <div class="speaker">
-                <img src="img/speakers/6.jpg" alt="Speaker 6" class="img-fluid">
-                <div class="details">
-                  <h3><a href="#">Sonal Jotwani</a></h3>
-                  <p>Marketing Head</p>
-                  <br>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> -->
-
       <section class="team" style="padding-top: 0px;">
         <div class="container">
-          <div class="section-header mb-2">
-            <h2>Our Team</h2>
-            <p>Here's to the our dedicated team...</p>
-          </div>
+
           <div class="row align-items-center justify-content-center">
             <div class="col-md-10 col-md-offset-1">
               <div class="col-lg-12">
+                <div class="section-header mb-2"><br><br>
+                  <h2>Overall Co-ordinators</h2>
+                </div>
                 <!-- <h6 class="description">OUR TEAM</h6> -->
-                <div class="row pt-md">
-                  <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
-                    <div class="img-box">
-                      <img src="img/team/1.jpg" class="img-responsive">
-                      <ul class="text-center">
-                        <a href="http://abdul.co.in"><li><i class="fa fa-internet-explorer"></i></li></a>
-                        <a href="http://instagram.com/abdul_codes/"><li><i class="fa fa-instagram"></i></li></a>
-                        <a href="https://github.com/abdulnine7/"><li><i class="fa fa-github"></i></li></a>
-                        <a href="https://www.linkedin.com/in/abdulnine7"><li><i class="fa fa-linkedin"></i></li></a>
-                        <!-- <br>
-                        <a href="#"><li class="my-team">My Team</li></a> -->
-                      </ul>
-
-                    </div>
-                    <h1 style="text-align:center;" >Abdul Sheikh</h1>
-                    <h2 style="text-align:center;">Technical Head</h2>
-                    <!-- <p style="text-align:center;">Where there is a <strong>shell</strong> there is a way.</p> -->
-                  </div>
+                <div class="row pt-md align-items-center justify-content-center">
                   <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
                     <div class="img-box">
                       <img src="img/team/2.jpg" class="img-responsive">
                       <ul class="text-center">
-                        <a href="#"><li><i class="fa fa-facebook"></i></li></a>
-                        <a href="#"><li><i class="fa fa-twitter"></i></li></a>
-                        <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
+                        <a href="mailto:vivekbhange006@gmail.com">
+                          <li><i class="fa fa-envelope"></i></li>
+                        </a>
+                        <a href="https://www.linkedin.com/in/vivek-bhange-027574126 ">
+                          <li><i class="fa fa-linkedin"></i></li>
+                        </a>
                       </ul>
                     </div>
                     <h1 style="text-align:center;">Vivek Bhange</h1>
-                    <h2 style="text-align:center;">Co-ordinator/ Mechanical Department</h2>
+
                     <!-- <p style="text-align:center;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p> -->
                   </div>
                   <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
                     <div class="img-box">
                       <img src="img/team/3.jpg" class="img-responsive">
                       <ul class="text-center">
-                        <a href="#"><li><i class="fa fa-facebook"></i></li></a>
-                        <a href="#"><li><i class="fa fa-twitter"></i></li></a>
-                        <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
+                        <a href="mailto:khushalagarwal9@gmail.com">
+                          <li><i class="fa fa-envelope"></i></li>
+                        </a>
+                        <a href="https://www.linkedin.com/in/khushal-agarwal9/">
+                          <li><i class="fa fa-linkedin"></i></li>
+                        </a>
                       </ul>
                     </div>
                     <h1 style="text-align:center;">Khushal Agrawal</h1>
-                    <h2 style="text-align:center;">Co-ordinator/ Electronics Department</h2>
+
                     <!-- <p style="text-align:center;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p> -->
                   </div>
                   <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
                     <div class="img-box">
                       <img src="img/team/4.jpg" class="img-responsive">
                       <ul class="text-center">
-                        <a href="#"><li><i class="fa fa-facebook"></i></li></a>
-                        <a href="#"><li><i class="fa fa-twitter"></i></li></a>
-                        <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
+                        <a href="mailto:pratikshapanchbhai1@gmail.com">
+                          <li><i class="fa fa-envelope"></i></li>
+                        </a>
+                        <a href="https://www.linkedin.com/in/pratiksha-panchbhai-628595128">
+                          <li><i class="fa fa-linkedin"></i></li>
+                        </a>
                       </ul>
                     </div>
                     <h1 style="text-align:center;">Pratiksha Panchbhai</h1>
-                    <h2 style="text-align:center;">Co-ordinator/ Computer Department</h2>
-                    <!-- <p style="text-align:center;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p> -->
-                  </div>
-                  <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
-                    <div class="img-box">
-                      <img src="img/team/5.jpg" class="img-responsive">
-                      <ul class="text-center">
-                        <a href="#"><li><i class="fa fa-facebook"></i></li></a>
-                        <a href="#"><li><i class="fa fa-twitter"></i></li></a>
-                        <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
-                      </ul>
-                    </div>
-                    <h1 style="text-align:center;">Rohit Raj</h1>
-                    <h2 style="text-align:center;">Management Lead</h2>
-                    <!-- <p style="text-align:center;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p> -->
-                  </div>
-                  <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
-                    <div class="img-box">
-                      <img src="img/team/6.jpg" class="img-responsive">
-                      <ul class="text-center">
-                        <a href="#"><li><i class="fa fa-facebook"></i></li></a>
-                        <a href="#"><li><i class="fa fa-twitter"></i></li></a>
-                        <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
-                      </ul>
-                    </div>
-                    <h1 style="text-align:center;">Nidhi Khobragade</h1>
-                    <h2 style="text-align:center;">Management Lead</h2>
-                    <!-- <p style="text-align:center;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p> -->
-                  </div>
-                  <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
-                    <div class="img-box">
-                      <img src="img/team/7.jpg" class="img-responsive">
-                      <ul class="text-center">
-                        <a href="#"><li><i class="fa fa-facebook"></i></li></a>
-                        <a href="#"><li><i class="fa fa-twitter"></i></li></a>
-                        <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
-                      </ul>
-                    </div>
-                    <h1 style="text-align:center;">Chinmay Rane</h1>
-                    <h2 style="text-align:center;">ICE Head</h2>
-                    <!-- <p style="text-align:center;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p> -->
-                  </div>
-                  <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
-                    <div class="img-box">
-                      <img src="img/team/8.jpg" class="img-responsive">
-                      <ul class="text-center">
-                        <a href="#"><li><i class="fa fa-facebook"></i></li></a>
-                        <a href="#"><li><i class="fa fa-twitter"></i></li></a>
-                        <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
-                      </ul>
-                    </div>
-                    <h1 style="text-align:center;">Anshul Lavankar</h1>
-                    <h2 style="text-align:center;">Finance Lead</h2>
-                    <!-- <p style="text-align:center;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p> -->
-                  </div>
-                  <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
-                    <div class="img-box">
-                      <img src="img/team/9.jpg" class="img-responsive">
-                      <ul class="text-center">
-                        <a href="#"><li><i class="fa fa-facebook"></i></li></a>
-                        <a href="#"><li><i class="fa fa-twitter"></i></li></a>
-                        <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
-                      </ul>
-                    </div>
-                    <h1 style="text-align:center;">Yash Hatekar</h1>
-                    <h2 style="text-align:center;">Events Lead</h2>
-                    <!-- <p style="text-align:center;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p> -->
-                  </div>
-                  <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
-                    <div class="img-box">
-                      <img src="img/team/10.jpg" class="img-responsive">
-                      <ul class="text-center">
-                        <a href="#"><li><i class="fa fa-facebook"></i></li></a>
-                        <a href="#"><li><i class="fa fa-twitter"></i></li></a>
-                        <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
-                      </ul>
-                    </div>
-                    <h1 style="text-align:center;">Alfiya Sheikh</h1>
-                    <h2 style="text-align:center;">Events Lead</h2>
-                    <!-- <p style="text-align:center;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p> -->
-                  </div>
-                  <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
-                    <div class="img-box">
-                      <img src="img/team/11.jpg" class="img-responsive">
-                      <ul class="text-center">
-                        <a href="#"><li><i class="fa fa-facebook"></i></li></a>
-                        <a href="#"><li><i class="fa fa-twitter"></i></li></a>
-                        <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
-                      </ul>
-                    </div>
-                    <h1 style="text-align:center;">Siddhart Gupta</h1>
-                    <h2 style="text-align:center;">Publicity Lead</h2>
-                    <!-- <p style="text-align:center;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p> -->
-                  </div>
-                  <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
-                    <div class="img-box">
-                      <img src="img/team/12.jpg" class="img-responsive">
-                      <ul class="text-center">
-                        <a href="#"><li><i class="fa fa-facebook"></i></li></a>
-                        <a href="#"><li><i class="fa fa-twitter"></i></li></a>
-                        <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
-                      </ul>
-                    </div>
-                    <h1 style="text-align:center;">Tushar Saykar</h1>
-                    <h2 style="text-align:center;">Publicity Lead</h2>
-                    <!-- <p style="text-align:center;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p> -->
-                  </div>
-                  <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
-                    <div class="img-box">
-                      <img src="img/team/13.jpg" class="img-responsive">
-                      <ul class="text-center">
-                        <a href="#"><li><i class="fa fa-facebook"></i></li></a>
-                        <a href="#"><li><i class="fa fa-twitter"></i></li></a>
-                        <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
-                      </ul>
-                    </div>
-                    <h1 style="text-align:center;">Sidhart Sharma</h1>
-                    <h2 style="text-align:center;">Marketing Lead</h2>
-                    <!-- <p style="text-align:center;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p> -->
-                  </div>
-                  <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
-                    <div class="img-box">
-                      <img src="img/team/14.jpg" class="img-responsive">
-                      <ul class="text-center">
-                        <a href="#"><li><i class="fa fa-facebook"></i></li></a>
-                        <a href="#"><li><i class="fa fa-twitter"></i></li></a>
-                        <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
-                      </ul>
-                    </div>
-                    <h1 style="text-align:center;">Khushal Bhutada</h1>
-                    <h2 style="text-align:center;">Marketing Lead</h2>
-                    <!-- <p style="text-align:center;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p> -->
-                  </div>
-                  <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
-                    <div class="img-box">
-                      <img src="img/team/15.jpg" class="img-responsive">
-                      <ul class="text-center">
-                        <a href="#"><li><i class="fa fa-facebook"></i></li></a>
-                        <a href="#"><li><i class="fa fa-twitter"></i></li></a>
-                        <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
-                      </ul>
-                    </div>
-                    <h1 style="text-align:center;">Gitanshu Gandekar</h1>
-                    <h2 style="text-align:center;">Marketing Lead</h2>
-                    <!-- <p style="text-align:center;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p> -->
-                  </div>
-                  <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
-                    <div class="img-box">
-                      <img src="img/team/16.jpg" class="img-responsive">
-                      <ul class="text-center">
-                        <a href="#"><li><i class="fa fa-facebook"></i></li></a>
-                        <a href="#"><li><i class="fa fa-twitter"></i></li></a>
-                        <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
-                      </ul>
-                    </div>
-                    <h1 style="text-align:center;">Aditya Rethe</h1>
-                    <h2 style="text-align:center;">Graphics Lead</h2>
-                    <!-- <p style="text-align:center;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p> -->
-                  </div>
-                  <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
-                    <div class="img-box">
-                      <img src="img/team/17.jpg" class="img-responsive">
-                      <ul class="text-center">
-                        <a href="#"><li><i class="fa fa-facebook"></i></li></a>
-                        <a href="#"><li><i class="fa fa-twitter"></i></li></a>
-                        <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
-                      </ul>
-                    </div>
-                    <h1 style="text-align:center;">Nancy Das</h1>
-                    <h2 style="text-align:center;">Hospitality Lead</h2>
+
                     <!-- <p style="text-align:center;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p> -->
                   </div>
                 </div>
               </div>
             </div>
           </div>
+
+          <div class="row align-items-center justify-content-center">
+            <div class="col-md-10 col-md-offset-1">
+              <div class="col-lg-12">
+                <div class="section-header mb-2"> <br><br>
+                  <h2>Finance Lead</h2>
+                </div>
+                <!-- <h6 class="description">OUR TEAM</h6> -->
+                <div class="row pt-md align-items-center justify-content-center">
+                  <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+                    <div class="img-box" align="center">
+                      <img src="img/team/8.jpg" class="img-responsive">
+                      <ul class="text-center">
+                        <a href="mailto:lawankaranshul@gmail.com">
+                          <li><i class="fa fa-envelope"></i></li>
+                        </a>
+                        <a href="https://www.linkedin.com/in/anshul-lawankar-68687114b">
+                          <li><i class="fa fa-linkedin"></i></li>
+                        </a>
+                        <!-- <br>
+                                        <a href="#"><li class="my-team">My Team</li></a> -->
+                      </ul>
+                    </div>
+                    <h1 style="text-align:center;">Anshul Lawankar</h1>
+
+                    <!-- <p style="text-align:center;">Where there is a <strong>shell</strong> there is a way.</p> -->
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile" align="center">
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row align-items-center justify-content-center">
+            <div class="col-md-10 col-md-offset-1">
+              <div class="col-lg-12">
+                <div class="section-header mb-2"><br><br>
+                  <h2>Management Lead</h2>
+                </div>
+                <!-- <h6 class="description">OUR TEAM</h6> -->
+                <div class="row pt-md align-items-center justify-content-center">
+                  <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+                    <div class="img-box">
+                      <img src="img/team/5.jpg" class="img-responsive">
+                      <ul class="text-center">
+                        <a href="mailto:rohitrraj284@gmail.com">
+                          <li><i class="fa fa-envelope"></i></li>
+                        </a>
+                        <a href="https://www.linkedin.com/in/rohitraj97/ ">
+                          <li><i class="fa fa-linkedin"></i></li>
+                        </a>
+                      </ul>
+                    </div>
+                    <h1 style="text-align:center;">Rohit Raj</h1>
+
+                    <!-- <p style="text-align:center;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p> -->
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+                    <div class="img-box">
+                      <img src="img/team/6.jpg" class="img-responsive">
+                      <ul class="text-center">
+                        <a href="mailto:knidhi9114@gmail.com">
+                          <li><i class="fa fa-envelope"></i></li>
+                        </a>
+                        <a href=" https://www.linkedin.com/in/nidhi-khobragade-118828125">
+                          <li><i class="fa fa-linkedin"></i></li>
+                        </a>
+                      </ul>
+                    </div>
+                    <h1 style="text-align:center;">Nidhi Khobragade</h1>
+
+                    <!-- <p style="text-align:center;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p> -->
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+                    <div class="img-box">
+                      <img src="img/team/17.jpg" class="img-responsive">
+                      <ul class="text-center">
+                        <a href="mailto:nancydas12@gmail.com">
+                          <li><i class="fa fa-envelope"></i></li>
+                        </a>
+                        <a href="https://www.linkedin.com/in/nancy-das/ ">
+                          <li><i class="fa fa-linkedin"></i></li>
+                        </a>
+                      </ul>
+                    </div>
+                    <h1 style="text-align:center;">Nancy Das</h1>
+
+                    <!-- <p style="text-align:center;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row align-items-center justify-content-center">
+            <div class="col-md-10 col-md-offset-1">
+              <div class="col-lg-12">
+                <div class="section-header mb-2"><br><br>
+                  <h2>ICE</h2>
+                </div>
+                <!-- <h6 class="description">OUR TEAM</h6> -->
+                <div class="row pt-md align-items-center justify-content-center">
+                  <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+                    <div class="img-box">
+                      <img src="img/team/7.jpg" class="img-responsive">
+                      <ul class="text-center">
+                        <a href="mailto:chinmayurane@gmail.com">
+                          <li><i class="fa fa-envelope"></i></li>
+                        </a>
+                        <a href=" https://www.linkedin.com/in/chinmay-rane-52b22b136 ">
+                          <li><i class="fa fa-linkedin"></i></li>
+                        </a>
+                        <!-- <br>
+                            <a href="#"><li class="my-team">My Team</li></a> -->
+                      </ul>
+                    </div>
+                    <h1 style="text-align:center;">Chinmay Rane</h1>
+
+                    <!-- <p style="text-align:center;">Where there is a <strong>shell</strong> there is a way.</p> -->
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row align-items-center justify-content-center">
+            <div class="col-md-10 col-md-offset-1">
+              <div class="col-lg-12">
+                <div class="section-header mb-2"> <br><br>
+                  <h2>Marketing Lead</h2>
+                </div>
+                <!-- <h6 class="description">OUR TEAM</h6> -->
+                <div class="row pt-md align-items-center justify-content-center">
+                  <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+                    <div class="img-box">
+                      <img src="img/team/13.jpg" class="img-responsive">
+                      <ul class="text-center">
+                        <a href="mailto:s.siddharth.of@gmail.com">
+                          <li><i class="fa fa-envelope"></i></li>
+                        </a>
+
+                        <a href="#">
+                          <li><i class="fa fa-linkedin"></i></li>
+                        </a>
+                        <!-- <br>
+                        <a href="#"><li class="my-team">My Team</li></a> -->
+                      </ul>
+                    </div>
+                    <h1 style="text-align:center;">Siddharth Sharma</h1>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+                    <div class="img-box">
+                      <img src="img/team/14.jpg" class="img-responsive">
+                      <ul class="text-center">
+
+                        <a href="mailto:kushal12329@gmail.com">
+                          <li><i class="fa fa-envelope"></i></li>
+                        </a>
+                        <a href="#">
+                          <li><i class="fa fa-linkedin"></i></li>
+                        </a>
+
+                        <!-- <br>
+                                              <a href="#"><li class="my-team">My Team</li></a> -->
+                      </ul>
+                    </div>
+                    <h1 style="text-align:center;">Kushal Bhutada</h1>
+
+                    <!-- <p style="text-align:center;">Where there is a <strong>shell</strong> there is a way.</p> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <div class="row align-items-center justify-content-center">
+          <div class="col-md-10 col-md-offset-1">
+            <div class="col-lg-12">
+              <div class="section-header mb-2"> <br><br>
+                <h2>Publicity Lead</h2>
+              </div>
+              <!-- <h6 class="description">OUR TEAM</h6> -->
+              <div class="row pt-md align-items-center justify-content-center">
+
+                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+                  <div class="img-box">
+                    <img src="img/team/11.jpg" class="img-responsive">
+                    <ul class="text-center">
+                      <a href="mailto:siddharthg21@gmail.com">
+                        <li><i class="fa fa-envelope"></i></li>
+                      </a>
+                      <a href="https://www.linkedin.com/in/siddharth-gupta-97950a169">
+                        <li><i class="fa fa-linkedin"></i></li>
+                      </a>
+                      <!-- <br>
+                                                                            <a href="#"><li class="my-team">My Team</li></a> -->
+                    </ul>
+                  </div>
+                  <h1 style="text-align:center;">Siddharth Gupta </h1>
+
+                  <!-- <p style="text-align:center;">Where there is a <strong>shell</strong> there is a way.</p> -->
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+                  <div class="img-box">
+                    <img src="img/team/12.jpg" class="img-responsive">
+                    <ul class="text-center">
+                      <a href="mailto:tushar.h.saykar@gmail.com">
+                        <li><i class="fa fa-envelope"></i></li>
+                      </a>
+                      <a href=" https://www.linkedin.com/in/tushar-saykar-b73549139z ">
+                        <li><i class="fa fa-linkedin"></i></li>
+                      </a>
+                      <!-- <br>
+                                                                            <a href="#"><li class="my-team">My Team</li></a> -->
+                    </ul>
+                  </div>
+                  <h1 style="text-align:center;">Tushar Saykar</h1>
+
+                  <!-- <p style="text-align:center;">Where there is a <strong>shell</strong> there is a way.</p> -->
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+
+
+        <div class="row align-items-center justify-content-center">
+          <div class="col-md-10 col-md-offset-1">
+            <div class="col-lg-12">
+              <div class="section-header mb-2"> <br><br>
+                <h2>Events Lead</h2>
+              </div>
+              <!-- <h6 class="description">OUR TEAM</h6> -->
+              <div class="row pt-md align-items-center justify-content-center">
+                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+                  <div class="img-box">
+                    <img src="img/team/9.jpg" class="img-responsive">
+                    <ul class="text-center">
+                      <a href="mailto:tushar.h.saykar@gmail.com">
+                        <li><i class="fa fa-envelope"></i></li>
+                      </a>
+
+                      <a href=" https://www.linkedin.com/in/tushar-saykar-b73549139">
+                        <li><i class="fa fa-linkedin"></i></li>
+                      </a>
+                      <!-- <br>
+                                                                              <a href="#"><li class="my-team">My Team</li></a> -->
+                    </ul>
+                  </div>
+                  <h1 style="text-align:center;">Yash Hatekar</h1>
+
+                  <!-- <p style="text-align:center;">Where there is a <strong>shell</strong> there is a way.</p> -->
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row align-items-center justify-content-center">
+          <div class="col-md-10 col-md-offset-1">
+            <div class="col-lg-12">
+              <div class="section-header mb-2"><br><br>
+                <h2>Graphics Lead</h2>
+              </div>
+              <!-- <h6 class="description">OUR TEAM</h6> -->
+              <div class="row pt-md align-items-center justify-content-center">
+                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+                  <div class="img-box">
+                    <img src="img/team/16.jpg" class="img-responsive">
+                    <ul class="text-center">
+
+                      <a href="mailto:yashhatekar1997@gmail.com">
+                        <li><i class="fa fa-envelope"></i></li>
+                      </a>
+                      <a href="https://www.linkedin.com/in/yashhatekar/">
+                        <li><i class="fa fa-linkedin"></i></li>
+                      </a>
+                      <!-- <br>
+                                                                                                                                                <a href="#"><li class="my-team">My Team</li></a> -->
+                    </ul>
+                  </div>
+                  <h1 style="text-align:center;">Aditya Rethe</h1>
+
+                  <!-- <p style="text-align:center;">Where there is a <strong>shell</strong> there is a way.</p> -->
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row align-items-center justify-content-center">
+          <div class="col-md-10 col-md-offset-1">
+            <div class="col-lg-12">
+              <div class="section-header mb-2"> <br><br>
+                <h2>Technical Lead</h2>
+              </div>
+              <div class="row pt-md align-items-center justify-content-center">
+                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+                  <div class="img-box">
+                    <img src="img/team/1.jpg" class="img-responsive">
+                    <ul class="text-center">
+
+                      <a href="mailto:me@abdul.co.in">
+                        <li><i class="fa fa-envelope"></i></li>
+                      </a>
+                      <a href="https://www.linkedin.com/in/abdulnine7">
+                        <li><i class="fa fa-linkedin"></i></li>
+                      </a>
+                      <!-- <br>
+                                                                                                                                                                                                                  <a href="#"><li class="my-team">My Team</li></a> -->
+                    </ul>
+                  </div>
+                  <h1 style="text-align:center;">Abdul Sheikh</h1>
+
+                  <!-- <p style="text-align:center;">Where there is a <strong>shell</strong> there is a way.</p> -->
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+
+
       </section>
     </section>
 
@@ -511,7 +628,7 @@
               <li><i class="fa fa-angle-right"></i> <a href="about.html">About Us</a></li>
               <li><i class="fa fa-angle-right"></i> <a href="events.html">Events</a></li>
               <li><i class="fa fa-angle-right"></i> <a href="sponsors.html">Sponsors</a></li>
-              <li><i class="fa fa-angle-right"></i> <a href="register.html">Registration</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="register.php">Registration</a></li>
 
             </ul>
           </div>
@@ -522,7 +639,7 @@
               MIT-World Peace University <br>
               S.No.124, Paud Road, Kothrud, Pune, <br>
               Maharashtra 411038 <br><br>
-              <strong>Email:</strong> texephyr.mitpune@gmail.com<br> <strong>Mobile:</strong> 9168027990,  8669189933
+              <strong>Email:</strong> texephyr.mitpune@gmail.com<br> <strong>Mobile:</strong> 9168027990, 8669189933
             </p>
 
             <div class="social-links">

@@ -1,3 +1,46 @@
+<?php
+$servername = "localhost:3306";
+$username = "root";
+$password = "helloworld";
+$dbname = "tex19";
+
+
+// Create connection
+$conn = mysqli_connect($servername, $username, $password, $dbname);
+// Check connection
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+
+$pName = $_POST['name'];
+$pMail = $_POST['email'];
+$pPhone = $_POST['mobile'];
+
+$pCollegeId = $_POST['college'];
+$eventId = $_POST['event'];
+
+$query = "INSERT INTO `web_registration`(`name`, `email`, `contact`, `college`, `event`) VALUES ('$pName', '$pMail', '$pPhone', '$pCollegeId', '$eventId')";
+$result = mysqli_query($conn, $query);
+
+//Get Event and its fees
+$pEvent = "None";
+$pEventFees = "None";
+$get_event = "SELECT e_name, e_fees FROM event WHERE e_id ='" . $eventId . "'";
+$result = mysqli_query($conn, $get_event);
+if (mysqli_num_rows($result) > 0) {
+    $row_event = mysqli_fetch_assoc($result);
+    $pEvent = $row_event['e_name'];
+    $pEventFees = $row_event['e_fees'];
+}
+
+$message = "";
+if ($result) {
+  $message = $message . "Hey " . $pName . ",\nYou are successfully registered for the event '" . $pEvent . "' in Texephyr 2K19.<br><br>Amount to be Paid: " . $pEventFees ;
+  $message = $message . "<br><br>You will receive a SMS shortly.";
+} else {
+    $message = "Sorry, Something went wrong please try again!";
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -53,7 +96,7 @@
           <li><a href="team.html">Team</a></li>
           <li><a href="sponsors.html">Sponsors</a></li>
           <li><a href="contactus.html">Contact</a></li>
-          <li class="buy-tickets menu-active"><a href="register.html">Registrations</a></li>
+          <li class="buy-tickets menu-active"><a href="register.php">Registrations</a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>
@@ -66,57 +109,23 @@
       <div class="container">
 
         <div class="section-header">
-          <h2>Register</h2>
+          <h2>Message</h2>
         </div>
+
         <div class="row">
           <div class="col-md-2">
           </div>
           <div class="col-md-8">
-            <div class="form">
-              <div id="sendmessage">Your message has been sent. Thank you!</div>
-              <div id="errormessage"></div>
-              <form action="" method="post" role="form" class="contactForm">
 
-                <div class="form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                  <div class="validation"></div>
-                </div>
-
-                <div class="form-group">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                  <div class="validation"></div>
-                </div>
-                <div class="form-group">
-                  <input type="text" class="form-control" name="mobile" id="mobile" placeholder="Phone Number" data-rule="mobile" data-msg="Please enter a valid mobile" />
-                  <div class="validation"></div>
-                </div>
-                <div class="form-group">
-                  <select name="college" class="form-control">
-                    <option value="college1">College 1</option>
-                    <option value="college2">College 2</option>
-                    <option value="college3">College 3</option>
-                    <option value="college4">College 4</option>
-                  </select>
-                  <div class="validation"></div>
-                </div>
-
-                <div class="form-group">
-                  <select name="event" class="form-control">
-                    <option value="event1">Event 1</option>
-                    <option value="event2">Event 2</option>
-                    <option value="event3">Event 3</option>
-                    <option value="event4">Event 4</option>
-                  </select>
-                  <div class="validation"></div>
-                </div>
-
-                <div class="text-center"><button type="submit">Register</button></div>
-              </form>
+            <div class="card bg-info text-white">
+              <div class="card-body"><p><?php echo $message ?></p></div>
             </div>
+
           </div>
           <div class="col-md-2">
           </div>
         </div>
+      </div>
     </section>
 
   </main>
@@ -143,7 +152,7 @@
               <li><i class="fa fa-angle-right"></i> <a href="about.html">About Us</a></li>
               <li><i class="fa fa-angle-right"></i> <a href="events.html">Events</a></li>
               <li><i class="fa fa-angle-right"></i> <a href="sponsors.html">Sponsors</a></li>
-              <li><i class="fa fa-angle-right"></i> <a href="register.html">Registration</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="register.php">Registration</a></li>
 
             </ul>
           </div>

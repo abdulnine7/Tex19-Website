@@ -1,3 +1,36 @@
+<?php
+$servername = "localhost:3306";
+$username = "root";
+$password = "helloworld";
+$dbname = "tex19";
+
+
+// Create connection
+$conn = mysqli_connect($servername, $username, $password, $dbname);
+// Check connection
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+
+$name = $_POST['name'];
+$email = $_POST['email'];
+$phone = $_POST['mobile'];
+$message = $_POST['message'];
+
+// echo $name."<br>".$email."<br>".$phone."<br>".$message;
+
+$query = "INSERT INTO `contact_us_submissions`( `name`, `phone`, `email`, `message`) VALUES ('$name', '$phone', '$email', '$message')";
+$result = mysqli_query($conn, $query);
+
+$message = "";
+if ($result) {
+  $message = $message . "Hey " . $name. ", thanks for connecting with us.";
+  $message = $message . "<br><br>We will get back to you shortly.";
+} else {
+    $message = "Sorry, Something went wrong please try again!";
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -26,47 +59,20 @@
 
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
-
   <style>
-    #main {
-      background-color: #E2F8F3;
-    }
-
-    .column img {
-      border-radius: 4px;
-      border: 1px solid #ddd;
-      padding: 5px;
-      width: 315px;
-      height: 225px;
-
-    }
-
-    .column img:hover {
-      box-shadow: 0 0 10px 10px rgba(0, 140, 186, 1);
-    }
-
-    .overlay {
-      position: absolute;
-      bottom: 0;
-      background: rgb(0, 0, 0);
-      background: rgb(216, 45, 79);
-      /* Black see-through */
-      color: blue;
-      width: 302px;
-      transition: .5s ease;
-      opacity: 0;
-      color: white;
-      font-size: 20px;
-      padding: 15px;
-      margin-left: 7px;
-      margin-bottom: 20px;
-      text-align: center;
-      align: center;
-    }
-
-    .column:hover .overlay {
-      opacity: 0.8;
-    }
+    .google-maps {
+          position: relative;
+          padding-bottom: 75%; // This is the aspect ratio
+          height: 0;
+          overflow: hidden;
+      }
+      .google-maps iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100% !important;
+          height: 100% !important;
+      }
   </style>
 </head>
 
@@ -81,81 +87,50 @@
       <div id="logo" class="pull-left">
         <!-- Uncomment below if you prefer to use a text logo -->
         <!-- <h1><a href="#main">C<span>o</span>nf</a></h1>-->
-        <a href="index.html#intro" class="scrollto"><img src="img/tx.png" alt="" title="" </a> </div> <nav id="nav-menu-container">
-          <ul class="nav-menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li class="menu-active"><a href="events.html">Events</a></li>
-            <li><a href="schedule.html">Schedule</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="team.html">Team</a></li>
-            <li><a href="sponsors.html">Sponsors</a></li>
-            <li><a href="contactus.html">Contact</a></li>
-            <li class="buy-tickets"><a href="register.php">Registrations</a></li>
-          </ul>
-          </nav><!-- #nav-menu-container -->
+        <a href="index.html#intro" class="scrollto"><img src="img/tx.png" alt="" title=""></a>
       </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="schedule.html">Schedule</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="sponsors.html">Sponsors</a></li>
+          <li class="menu-active"><a href="contactus.html">Contact</a></li>
+          <li class="buy-tickets"><a href="register.php">Registrations</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
   </header><!-- #header -->
 
-  <section id="elecs">
-    <main id="main" class="main-page">
+  <main id="main" class="main-page">
 
-      <!--==========================
-      Speaker Details Section
-    ============================-->
-      <section id="venue" class="wow fadeInUp">
-        <div class="container">
-          <div class="section-header">
-            <h2>Electronics & Electrical Events</h2>
-          </div>
-          <div class="row align-items-center justify-content-center">
-            <div class="column">
-              <div class="col-lg-4 col-md-4 py-3">
-                <a href="drone_race.html"><img src="img/elec_events/drone1.jpg"></a>
-                <div class="overlay">DRONE RACE</div>
-              </div>
-            </div>
-            <div class="column">
-              <div class="col-lg-4 col-md-4 py-3">
-                <a href="ideate.html"><img src="img/elec_events/idea.jpg"></a>
-                <div class="overlay">IDEATE-TOPIC PRESENTATION</div>
-              </div>
-            </div>
-            <div class="column">
-              <div class="col-lg-4 col-md-4 py-3">
-                <a href="line_tracer.html"><img src="img/elec_events/line.jpg"></a>
-                <div class="overlay">LINE TRACER</div>
-              </div>
-            </div>
+    <section id="contact" class="section-bg wow fadeInUp">
+      <div class="container">
 
-            <div class="column">
-              <div class="col-lg-4 col-md-4 py-3">
-                <a href="technodumb.html"><img src="img/elec_events/techno1.jpg"></a>
-                <div class="overlay">TECHNODUMB</div>
-              </div>
-            </div>
-            <div class="column">
-              <div class="col-lg-4 col-md-4 py-3">
-                <a href="roborace.html"><img src="img/elec_events/electroduction.png"></a>
-                <div class="overlay">ROBORACE</div>
-              </div>
-            </div>
-            <div class="column">
-              <div class="col-lg-4 col-md-4 py-3">
-                <a href="tech_ko.html"><img src="img/elec_events/knockout.jpg"></a>
-                <div class="overlay">TECHNICAL KNOCKOUT</div>
-              </div>
-            </div>
-          </div>
-          <br>
-          <br>
+        <div class="section-header">
+          <h2>Message</h2>
         </div>
 
-      </section>
+        <div class="row">
+          <div class="col-md-2">
+          </div>
+          <div class="col-md-8">
 
-  </section>
+            <div class="card bg-info text-white">
+              <div class="card-body"><p><?php echo $message ?></p></div>
+            </div>
 
-
+          </div>
+          <div class="col-md-2">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <!--==========================
     Footer
@@ -188,8 +163,8 @@
             <h4>Contact Us</h4>
             <p>
               MIT-World Peace University <br>
-                  S.No.124, Paud Road, Kothrud, Pune, <br>
-                  Maharashtra 411038 <br><br>
+            S.No.124, Paud Road, Kothrud, Pune, <br>
+            Maharashtra 411038 <br><br>
               <strong>Email:</strong> texephyr.mitpune@gmail.com<br> <strong>Mobile:</strong> 9168027990,  8669189933
             </p>
 
@@ -216,8 +191,6 @@
       </div>
     </div>
   </footer><!-- #footer -->
-
-  <a href="index.html#intro" class="back-to-top"><i class="fa fa-angle-up"></i></a>
 
   <!-- JavaScript Libraries -->
   <script src="lib/jquery/jquery.min.js"></script>

@@ -1,3 +1,25 @@
+<?php
+$servername = "localhost:3306";
+$username = "root";
+$password = "helloworld";
+$dbname = "tex19";
+
+
+// Create connection
+$conn = mysqli_connect($servername, $username, $password, $dbname);
+// Check connection
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+
+$sql="SELECT e_id,e_name from event";
+$sql1="SELECT c_id,c_name FROM college";
+
+$result=mysqli_query($conn,$sql);
+$result1=mysqli_query($conn,$sql1);
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -27,47 +49,6 @@
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
 
-  <style>
-    #main {
-      background-color: #E2F8F3;
-    }
-
-    .column img {
-      border-radius: 4px;
-      border: 1px solid #ddd;
-      padding: 5px;
-      width: 315px;
-      height: 225px;
-
-    }
-
-    .column img:hover {
-      box-shadow: 0 0 10px 10px rgba(0, 140, 186, 1);
-    }
-
-    .overlay {
-      position: absolute;
-      bottom: 0;
-      background: rgb(0, 0, 0);
-      background: rgb(216, 45, 79);
-      /* Black see-through */
-      color: blue;
-      width: 302px;
-      transition: .5s ease;
-      opacity: 0;
-      color: white;
-      font-size: 20px;
-      padding: 15px;
-      margin-left: 7px;
-      margin-bottom: 20px;
-      text-align: center;
-      align: center;
-    }
-
-    .column:hover .overlay {
-      opacity: 0.8;
-    }
-  </style>
 </head>
 
 <body>
@@ -81,81 +62,96 @@
       <div id="logo" class="pull-left">
         <!-- Uncomment below if you prefer to use a text logo -->
         <!-- <h1><a href="#main">C<span>o</span>nf</a></h1>-->
-        <a href="index.html#intro" class="scrollto"><img src="img/tx.png" alt="" title="" </a> </div> <nav id="nav-menu-container">
-          <ul class="nav-menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li class="menu-active"><a href="events.html">Events</a></li>
-            <li><a href="schedule.html">Schedule</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="team.html">Team</a></li>
-            <li><a href="sponsors.html">Sponsors</a></li>
-            <li><a href="contactus.html">Contact</a></li>
-            <li class="buy-tickets"><a href="register.php">Registrations</a></li>
-          </ul>
-          </nav><!-- #nav-menu-container -->
+        <a href="index.html#intro" class="scrollto"><img src="img/tx.png" alt="" title=""></a>
       </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="schedule.html">Schedule</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="sponsors.html">Sponsors</a></li>
+          <li><a href="contactus.html">Contact</a></li>
+          <li class="buy-tickets menu-active"><a href="register.php">Registrations</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
   </header><!-- #header -->
 
-  <section id="elecs">
-    <main id="main" class="main-page">
+  <main id="main" class="main-page">
 
-      <!--==========================
-      Speaker Details Section
-    ============================-->
-      <section id="venue" class="wow fadeInUp">
-        <div class="container">
-          <div class="section-header">
-            <h2>Electronics & Electrical Events</h2>
-          </div>
-          <div class="row align-items-center justify-content-center">
-            <div class="column">
-              <div class="col-lg-4 col-md-4 py-3">
-                <a href="drone_race.html"><img src="img/elec_events/drone1.jpg"></a>
-                <div class="overlay">DRONE RACE</div>
-              </div>
-            </div>
-            <div class="column">
-              <div class="col-lg-4 col-md-4 py-3">
-                <a href="ideate.html"><img src="img/elec_events/idea.jpg"></a>
-                <div class="overlay">IDEATE-TOPIC PRESENTATION</div>
-              </div>
-            </div>
-            <div class="column">
-              <div class="col-lg-4 col-md-4 py-3">
-                <a href="line_tracer.html"><img src="img/elec_events/line.jpg"></a>
-                <div class="overlay">LINE TRACER</div>
-              </div>
-            </div>
+    <section id="contact" class="section-bg wow fadeInUp">
 
-            <div class="column">
-              <div class="col-lg-4 col-md-4 py-3">
-                <a href="technodumb.html"><img src="img/elec_events/techno1.jpg"></a>
-                <div class="overlay">TECHNODUMB</div>
-              </div>
-            </div>
-            <div class="column">
-              <div class="col-lg-4 col-md-4 py-3">
-                <a href="roborace.html"><img src="img/elec_events/electroduction.png"></a>
-                <div class="overlay">ROBORACE</div>
-              </div>
-            </div>
-            <div class="column">
-              <div class="col-lg-4 col-md-4 py-3">
-                <a href="tech_ko.html"><img src="img/elec_events/knockout.jpg"></a>
-                <div class="overlay">TECHNICAL KNOCKOUT</div>
-              </div>
-            </div>
-          </div>
-          <br>
-          <br>
+      <div class="container">
+
+        <div class="section-header">
+          <h2>Register</h2>
         </div>
+        <div class="row">
+          <div class="col-md-2">
+          </div>
+          <div class="col-md-8">
+            <div class="form">
+              <div id="sendmessage">Your message has been sent. Thank you!</div>
+              <div id="errormessage"></div>
+              <form action="register_status.php" method="post" class="">
 
-      </section>
+                <div class="form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required/>
+                  <div class="validation"></div>
+                </div>
 
-  </section>
+                <div class="form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" required />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" name="mobile" id="mobile" placeholder="Phone Number" data-rule="mobile" data-msg="Please enter a valid mobile" required />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <select name="college" class="form-control" required>
+                    <option disabled="true" selected="true" value="" >Select your college</option>
+                    <?php
+                      while ($row1=mysqli_fetch_assoc($result1))
+                      {
+                    ?>
+                    <option value="<?php echo $row1['c_id'] ?>"><?php echo $row1['c_name'] ?></option>
+                    <?php
+                    }
+                    ?>
+                  </select>
+                  <div class="validation"></div>
+                </div>
 
+                <div class="form-group">
+                  <select name="event" class="form-control" required>
+                    <option disabled="true" selected="true" value="" >Select an event</option>
+                    <?php
+                      while ($row=mysqli_fetch_assoc($result))
+                      {
+                    ?>
+                    <option value="<?php echo $row['e_id'] ?>"><?php echo $row['e_name'] ?></option>
+                    <?php
+                    }
+                    ?>
+                  </select>
+                  <div class="validation"></div>
+                </div>
 
+                <div class="text-center"><button type="submit">Register</button></div>
+              </form>
+            </div>
+          </div>
+          <div class="col-md-2">
+          </div>
+        </div>
+    </section>
+
+  </main>
 
   <!--==========================
     Footer
@@ -188,8 +184,8 @@
             <h4>Contact Us</h4>
             <p>
               MIT-World Peace University <br>
-                  S.No.124, Paud Road, Kothrud, Pune, <br>
-                  Maharashtra 411038 <br><br>
+              S.No.124, Paud Road, Kothrud, Pune, <br>
+              Maharashtra 411038 <br><br>
               <strong>Email:</strong> texephyr.mitpune@gmail.com<br> <strong>Mobile:</strong> 9168027990,  8669189933
             </p>
 
