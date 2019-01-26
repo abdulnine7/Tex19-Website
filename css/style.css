@@ -481,7 +481,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #sponsor1 {
-  background-color: #E2F8F3;
+  background-color: #ffffff;
 }
 
 #intro {
@@ -574,8 +574,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #intro .play-btn {
-  width: 94px;
-  height: 94px;
+  width: 70px;
+  height: 70px;
   background: radial-gradient(#f82249 50%, rgba(101, 111, 150, 0.15) 52%);
   border-radius: 50%;
   display: block;
@@ -1127,8 +1127,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #sponsors .sponsors-wrap {
-  border-top: 1px solid #e0e5fa;
-  border-left: 1px solid #e0e5fa;
+  border-top: 1px solid #ffffff;
+  border-left: 1px solid #ffffff;
   margin-bottom: 30px;
 }
 
@@ -1143,8 +1143,8 @@ body.mobile-nav-active #mobile-nav-toggle {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  border-right: 1px solid #e0e5fa;
-  border-bottom: 1px solid #e0e5fa;
+  border-right: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
   overflow: hidden;
   background: rgba(255, 255, 255, 0.5);
   height: 160px;
@@ -1219,7 +1219,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   overflow: hidden;
   position: relative;
 }
-
 #subscribe:before {
   content: "";
   background: rgba(6, 12, 34, 0.6);
@@ -1229,12 +1228,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   left: 0;
   right: 0;
 }
-
 #subscribe .section-header h2,
 #subscribe p {
   color: #fff;
 }
-
 #subscribe input {
   background: #fff;
   color: #060c22;
@@ -1245,7 +1242,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   border-radius: 50px;
   font-size: 14px;
 }
-
 #subscribe button {
   border: 0;
   padding: 9px 25px;
@@ -1257,7 +1253,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 14px;
   border-radius: 50px;
 }
-
 #subscribe button:hover {
   background: #e0072f;
 } */

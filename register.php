@@ -3,22 +3,16 @@ $servername = "localhost:3306";
 $username = "root";
 $password = "helloworld";
 $dbname = "tex19";
-
-
 // Create connection
 $conn = mysqli_connect($servername, $username, $password, $dbname);
 // Check connection
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
-
 $sql="SELECT e_id,e_name from event";
 $sql1="SELECT c_id,c_name FROM college";
-
 $result=mysqli_query($conn,$sql);
 $result1=mysqli_query($conn,$sql1);
-
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -67,14 +61,14 @@ $result1=mysqli_query($conn,$sql1);
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
           <li><a href="events.html">Events</a></li>
           <li><a href="schedule.html">Schedule</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="team.html">Team</a></li>
           <li><a href="sponsors.html">Sponsors</a></li>
-          <li><a href="contactus.html">Contact</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="about_mit.html">About MIT</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="developers.html">Developers</a></li>
           <li class="buy-tickets menu-active"><a href="register.php">Registrations</a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
@@ -207,8 +201,8 @@ $result1=mysqli_query($conn,$sql1);
     <div class="container">
       <div class="copyright">
         &copy; Copyright <strong>Texephyr</strong>. All Rights Reserved
-        <p>Designed & developed By:
-          <a href="">Abdul Sheikh, </a> <a href="https://www.facebook.com/shrutika.singh.7543?ref=bookmarks">Shrutika Singh, </a> & <a href="https://www.zipvc.com/profiles/91-9604372622"> Indira Pimpalkhare </a>
+         
+           
       </div>
     </div>
   </footer><!-- #footer -->

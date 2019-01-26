@@ -3,25 +3,19 @@ $servername = "localhost:3306";
 $username = "root";
 $password = "helloworld";
 $dbname = "tex19";
-
-
 // Create connection
 $conn = mysqli_connect($servername, $username, $password, $dbname);
 // Check connection
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
-
 $name = $_POST['name'];
 $email = $_POST['email'];
 $phone = $_POST['mobile'];
 $message = $_POST['message'];
-
 // echo $name."<br>".$email."<br>".$phone."<br>".$message;
-
 $query = "INSERT INTO `contact_us_submissions`( `name`, `phone`, `email`, `message`) VALUES ('$name', '$phone', '$email', '$message')";
 $result = mysqli_query($conn, $query);
-
 $message = "";
 if ($result) {
   $message = $message . "Hey " . $name. ", thanks for connecting with us.";
@@ -186,8 +180,8 @@ if ($result) {
     <div class="container">
       <div class="copyright">
         &copy; Copyright <strong>Texephyr</strong>. All Rights Reserved
-        <p>Designed & developed By:
-          <a href="">Abdul Sheikh, </a> <a href="https://www.facebook.com/shrutika.singh.7543?ref=bookmarks">Shrutika Singh, </a> & <a href="https://www.zipvc.com/profiles/91-9604372622"> Indira Pimpalkhare </a>
+         
+           
       </div>
     </div>
   </footer><!-- #footer -->
